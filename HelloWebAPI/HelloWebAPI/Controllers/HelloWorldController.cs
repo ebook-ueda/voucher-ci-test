@@ -24,20 +24,20 @@ namespace HelloWebAPI.Controllers
             return db.MyWorlds.Find(id);
         }
 
-        [ResponseType(typeof(MyWorlds))]
-        public IHttpActionResult Post([FromBody]MyWorlds myCity)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[ResponseType(typeof(MyWorlds))]
+        //public IHttpActionResult Post([FromBody]MyWorlds myCity)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            // 
-            db.MyWorlds.Add(myCity);
-            db.SaveChanges();
+        //    // 
+        //    db.MyWorlds.Add(myCity);
+        //    db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { count = db.MyWorlds.Count() }, db.MyWorlds);
-        }
+        //    return CreatedAtRoute("DefaultApi", new { count = db.MyWorlds.Count() }, db.MyWorlds);
+        //}
 
         [ResponseType(typeof(MyWorlds))]
         public IHttpActionResult Post([FromBody]List<MyWorlds> myWorlds)
