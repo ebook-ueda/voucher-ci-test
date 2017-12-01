@@ -125,9 +125,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711240833139_InitialCreate.cs" />
-    <Compile Include="Migrations\201711240833139_InitialCreate.Designer.cs">
-      <DependentUpon>201711240833139_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201712010605095_InitialCreate.cs" />
+    <Compile Include="Migrations\201712010605095_InitialCreate.Designer.cs">
+      <DependentUpon>201712010605095_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -145,8 +145,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711240833139_InitialCreate.resx">
-      <DependentUpon>201711240833139_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712010605095_InitialCreate.resx">
+      <DependentUpon>201712010605095_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
