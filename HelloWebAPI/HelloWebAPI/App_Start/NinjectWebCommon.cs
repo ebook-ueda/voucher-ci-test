@@ -12,7 +12,6 @@ namespace VoucherApiDotNetFW462.App_Start
     using System.Data;
     using System.Data.SqlClient;
     using System.Web;
-    using VoucherApiDotNetFW462.Dao;
 
     public static class NinjectWebCommon
     {
@@ -68,7 +67,6 @@ namespace VoucherApiDotNetFW462.App_Start
 
             // e.g. kernel.Load(Assembly.GetExecutingAssembly());
             kernel.Bind<IDbConnection>().To<SqlConnection>().InRequestScope();
-            kernel.Bind<ISystemDao>().To<SystemDao>().InRequestScope().WithConstructorArgument("conString", conString);
         }
 
     }
