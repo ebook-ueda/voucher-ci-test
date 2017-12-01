@@ -17,20 +17,10 @@ namespace HelloWebAPI.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
-            DropTable("dbo.MyEntities");
         }
         
         public override void Down()
         {
-            CreateTable(
-                "dbo.MyEntities",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                    })
-                .PrimaryKey(t => t.Id);
-            
             DropTable("dbo.MyWorlds");
         }
     }

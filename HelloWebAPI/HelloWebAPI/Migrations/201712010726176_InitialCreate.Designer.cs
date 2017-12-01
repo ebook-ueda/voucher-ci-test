@@ -13,7 +13,7 @@ namespace HelloWebAPI.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201712010605095_InitialCreate"; }
+            get { return "201712010726176_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
