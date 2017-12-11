@@ -1,12 +1,12 @@
 version: 0.0
 os: windows
 files:
-  - source: \src\HelloWebAPI\
-    destination: c:\inetpub\HelloWebAPI\Web.config
-  - source: \src\HelloWebAPI\
-    destination: c:\inetpub\HelloWebAPI\Global.asax
+  - source: \src\HelloWebAPI\Web.config
+    destination: c:\inetpub\HelloWebAPI\
+  - source: \src\HelloWebAPI\Global.asax
+    destination: c:\inetpub\HelloWebAPI\
   - source: \src\HelloWebAPI\bin
-    destination: c:\inetpub\bin
+    destination: c:\inetpub\HelloWebAPI\
 hooks:
   BeforeInstall:
     - location: \before-install.bat
