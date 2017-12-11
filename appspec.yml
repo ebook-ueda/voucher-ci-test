@@ -7,13 +7,3 @@ files:
     destination: c:\inetpub\HelloWebAPI\Global.asax
   - source: \src\HelloWebAPI\bin
     destination: c:\inetpub\bin
-hooks:
-REM  ApplicationStop:
-REM    - location: \application-stop.bat
-REM      timeout: 900
-  BeforeInstall:
-    - location: \before-install.bat
-      timeout: 900
-REM  ApplicationStart:
-REM    - location: \application-start.bat
-REM      timeout: 900
