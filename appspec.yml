@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: \src\HelloWebAPI\Web.config
+    destination: c:\inetpub\HelloWebAPI\Web.config
+  - source: \src\HelloWebAPI\Global.asax
+    destination: c:\inetpub\HelloWebAPI\Global.asax
+  - source: \src\HelloWebAPI\bin
+    destination: c:\inetpub\bin
