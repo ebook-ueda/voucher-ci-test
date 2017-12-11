@@ -6,7 +6,7 @@ files:
   - source: \src\HelloWebAPI\Global.asax
     destination: c:\inetpub\HelloWebAPI\
   - source: \src\HelloWebAPI\bin
-    destination: c:\inetpub\HelloWebAPI\
+    destination: c:\inetpub\HelloWebAPI\bin
 hooks:
   BeforeInstall:
     - location: \before-install.bat
