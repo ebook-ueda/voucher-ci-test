@@ -1,9 +1,0 @@
-version: 0.1
-
-artifacts:
-  type: zip
-  files:
-    - '$CODEBUILD_SRC_DIR\src\HelloWebAPI\Web.config'
-    - '$CODEBUILD_SRC_DIR\src\HelloWebAPI\Global.asax'
-    - '$CODEBUILD_SRC_DIR\src\HelloWebAPI\bin/*'
-    - '$CODEBUILD_SRC_DIR\appspec.yml'
